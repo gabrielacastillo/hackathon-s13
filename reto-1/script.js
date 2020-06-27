@@ -34,7 +34,8 @@ getUser2().then(user => {
 });
 
 /*¿que es un callback hell?
-
+ múltiples Callbacks anidados que provocan que el código se vuelva difícil de leer y 
+ 'debuggear'; ésta es la principal razón por la cual se debe evitar.
 */
 const xhr1 = new XMLHttpRequest();
 xhr1.open('GET', 'https://jsonplaceholder.typicode.com/todos/1');
