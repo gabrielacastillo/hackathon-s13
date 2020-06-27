@@ -9,41 +9,64 @@
 </head>
 <body>
     <div class="container">
-        <h3 class="title"> Gaby's TODO</h3>
+        <h3 class="title"> Gaby's CRUD</h3>
         <div class="todo">
-            <section class="todo__add">
-                <input id="item_value" type="text" placeholder="Add item" class="add__value">
-                <a id="add" href="#" class="add_button">
-                    <i class="fa fa-plus fa-lg" aria-hidden="true"></i>
+            <form class="todo__form">
+                <input id="input_nombre" type="text" placeholder="Nombre" class="form__input">
+                <input id="input_raza" type="text" placeholder="Raza" class="form__input">
+                <input id="input_edad" type="text" placeholder="Edad" class="form__input">
+                <a id="save" href="#" class="save_button">
+                    <i class="fa fa-floppy-o fa-lg" aria-hidden="true"></i>
+                    Guardar
                 </a>
-            </section>
-            <section class="todo__filter">
-                <input id="item_filter" type="text" placeholder="Filter item" class="filter__value">
-                <a id="fil" href="#" class="filter__button">
-                    <i class="fa fa-filter fa-lg" aria-hidden="true"></i>
-                </a>
-            </section>
-            <section class="todo__list">
-                <div class="list__item">
-                    <input type="checkbox" class="item__check">
-                    <label class="item__value">Estudiar Javascript</label>
-                    <a class="item__delete" href="#">
-                        <i class="fa fa-trash-o fa-lg" aria-hidden="true"></i>
-                    </a>
-                    <hr class="item_hr">
-                </div>
-                <div class="list__item">
-                    <input type="checkbox" class="item__check">
-                    <label class="item__value">Levantarme Temprano</label>
-                    <a class="item__delete" href="#">
-                        <i class="fa fa-trash-o fa-lg" aria-hidden="true"></i>
-                    </a>
-                    <hr class="item_hr">
-                </div>
+            </form>
+            <hr class="separator">
+            <section class="todo__body">
+                <table class="todo__table">
+                    <thead class="table__head">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Raza</th>
+                            <th>Edad</th>
+                            <th>Editar</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table__body">
+                        <tr>
+                            <td>Pretorian</td>
+                            <td>Poodle</td>
+                            <td>2</td>
+                            <td>
+                                <a class="body__edit" href="#">
+                                    <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                            <td>
+                                <a class="body__delete show" href="#">
+                                    <i class="fa fa-trash-o fa-lg" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </div>
     </div>
     
+    <!-- Modal -->
+    <div class="mask" role="dialog"></div>
+    <div class="modal" role="alert">
+      <button class="close" role="button">X</button>
+      <div class="modal__container">
+        <p class="container__body">¿Esta usted seguro de eliminar el registro?</p>
+        <div class="container__footer">
+            <button id="modal_aceptar" class="aceptar">Aceptar</button>
+            <button id="modal_cancelar" class="cancelar">Cancelar</button>
+        </div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
