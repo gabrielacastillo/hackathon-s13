@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h3 class="title"> Gaby's TODO</h3>
+        <div class="todo">
+            <section class="todo__add">
+                <input id="item_value" type="text" placeholder="Add item" class="add__value">
+                <a id="add" href="#" class="add_button">
+                    <i class="fa fa-plus fa-lg" aria-hidden="true"></i>
+                </a>
+            </section>
+            <section class="todo__filter">
+                <input id="item_filter" type="text" placeholder="Filter item" class="filter__value">
+                <a id="fil" href="#" class="filter__button">
+                    <i class="fa fa-filter fa-lg" aria-hidden="true"></i>
+                </a>
+            </section>
+            <section class="todo__list">
+                <div class="list__item">
+                    <input type="checkbox" class="item__check">
+                    <label class="item__value">Estudiar Javascript</label>
+                    <a class="item__delete" href="#">
+                        <i class="fa fa-trash-o fa-lg" aria-hidden="true"></i>
+                    </a>
+                    <hr class="item_hr">
+                </div>
+                <div class="list__item">
+                    <input type="checkbox" class="item__check">
+                    <label class="item__value">Levantarme Temprano</label>
+                    <a class="item__delete" href="#">
+                        <i class="fa fa-trash-o fa-lg" aria-hidden="true"></i>
+                    </a>
+                    <hr class="item_hr">
+                </div>
+            </section>
+        </div>
+    </div>
     
-
     <script src="script.js"></script>
-  </body>
+</body>
 </html>

@@ -1,1 +1,7 @@
 ¿Porque evitar los Callback de manera asincrona? ejemplo
+crud de perritos ,eliminando y guardando 
+agregar y un modal
+nombre correo dscripcion
+despues de pasar un hover en la parte interna agregar un modal eliminar 
+al nivel del dom
+ 

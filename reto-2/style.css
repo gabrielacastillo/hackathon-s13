@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 300px;
+    margin: 200px auto 0 auto;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.todo{
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: gray;
+}
+
+.todo__add{
+    
+}
+
+.add__value{
+    display: inline-block;
+    padding: 5px;
+    width: 247px;
+    vertical-align: middle;
+}
+
+.add_button{
+    padding: 5px;
+    width: 44px;
+    color: #fffb67;
+}
+
+.todo__filter{
+    margin-top: 10px;
+}
+
+.filter__value{
+    display: inline-block;
+    padding: 5px;
+    width: 247px;
+    vertical-align: middle;
+}
+
+.filter__button{
+    padding: 5px;
+    color: #c5ffc5;
+}
+
+.todo__list{
+    margin-top: 20px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 10px 5px 0 5px;
+    background-color: white;
+}
+
+.list__item{
+    padding-bottom: 5px;
+}
+
+.item__check{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.item__value{
+    display: inline-block;
+    width: 211px;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.item__delete{
+    padding: 5px;
+    vertical-align: middle;
+    color: red;
+}   
+
+.item_hr{
+    margin-top: 5px;
+}
